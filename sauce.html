@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>code snippets</title> 
+    <style>
+
+       @font-face {
+  font-family: Tiny; 
+  src: url(otf/TINY5x3-140.otf); 
+}
+        body{          
+            cursor: url('images/hands.png'), auto;
+            font-family: Tiny;
+            color: lightsalmon;
+            background-color: paleturquoise;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: scroll;
+              /* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/    
+            margin: 0;
+            margin-bottom: 0; 
+            min-height: 200vh;
+        } 
+
+.intro{
+padding: 70px;
+}
+.flying-sauce {
+    cursor: url('images/grab.png'), auto; 
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    animation: fly2 30s linear infinite; 
+}
+@keyframes fly2 {
+  0% { top: 20%; left: -10%; }
+  50% { top: 150%; left: 110%}
+  100% { top: 300%; left: -10%; }
+}
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 40px;
+    border-color: black;
+    align-items: center;
+}
+.chips{
+   cursor: url('images/grab.png'), auto;  
+}
+.sauce{
+    cursor: url('images/grab.png'), auto; 
+}
+.chippies{
+    cursor: url('images/grab.png'), auto;  
+}
+#video{
+  position: center;
+  width: 600px;
+  height: auto;
+  right: 0;
+  bottom: 0;  
+ 
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+p{
+  font-size: 25px;
+}
+</style>
+</head>
+    
+<body>
+<div class="intro">
+<h1> Code Snippets.</h1>
+
+</div>
+
+<div class="container">
+<video autoplay muted loop id="video">
+  <source src="images/Screen Recording 2026-05-02 123823.mp4" type="video/mp4">
+</video>
+<p> This is an early rendition of the homepage for this workbook. I liked the idea of a clean, black and white interface, that's character came from handrawn icons and graphics.</p>
+<br>
+<img src="images/Screenshot 2026-05-03 165714.png" alt="coded animation process" width="450px">
+<br>
+<img src="images/Screenshot 2026-05-03 165729.png" alt="coded animation process"width="500px">
+<br>
+<img src="images/Screenshot 2026-05-03 165743.png" alt="coded animation process" width="400px">
+<br>
+</div>
+
+<div class="return"></div>
+<a href="gull2.html"><img src="images/sauce.png" alt="Flying sauce" class="flying-sauce"></a>
+</div>
+
+<div class="footer">
+  <p> psssttt...you have to catch the gull to go back home.</p>
+  <p>® Lauren Luchs Interactive Media </p>
+</div>
+
+</body>
+  </html> 
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Experiments with code</title> 
+    <style>
+
+            @font-face {
+  font-family: Tiny; 
+  src: url(otf/TINY5x3-140.otf); 
+}
+        body{          
+            cursor: url('images/hands.png'), auto;
+            font-family: Tiny;
+            color: chartreuse;
+            background-color: darkcyan;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: scroll;
+              /* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/    
+            margin: 0;
+            margin-bottom: 0; 
+            min-height: 200vh;
+            
+        } 
+p{
+  font-size: 25px;
+}
+.intro{
+padding: 40px;
+}
+.flying-chips {
+    cursor: url('images/grab.png'), auto; 
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    animation: fly2 30s linear infinite; 
+}
+@keyframes fly2 {
+  0% { top: 20%; left: -10%; }
+  50% { top: 80%; left: 110%}
+  100% { top: 150%; left: -10%; }
+}
+.container{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.chips{
+   cursor: url('images/grab.png'), auto;  
+}
+.sauce{
+    cursor: url('images/grab.png'), auto; 
+}
+.chippies{
+    cursor: url('images/grab.png'), auto;  
+}
+#vid{
+  position: center;
+
+  height: auto;
+  right: 0;
+  bottom: 0;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+</style>
+</head>
+    
+<body>
+<div class="intro">
+<h1> Interface design experimentation</h1>
+</div>
+<div class="container">
+<h2> What happened to the Workbook Farm?</h2>
+<br>
+<p> Look, the Workbook Farm was really cute. But since its launch, I have become quite taken with seagulls... how do they get to be everywhere? I was on a trip in Canberra, and there were seagulls. In Canberra. Famously, Canberra is nowhere near the sea. </p>
+<p>I thought: what if this time I went weirder? What if the seagulls found their way online? </p>
+<p> Or what if the seagulls had no meaning at all?</p>
+<br>
+<h1> WHO'S AFRAID OF BIRDS?</h1>
+<br>
+<br>
+<img src="images/IMG_3518.jpg" alt="Wireframe" width="700px">
+<br>
+<br>
+<br>
+
+<video autoplay muted loop id="vid">
+  <source src="images/interfaceexp.mp4" type="video/mp4" width="500px">
+  </video>
+</div>
+
+<div class="return"></div>
+<a href="gull2.html"> <img src="images/straychips.png" alt="Flying chippies" class="flying-chips"></a>
+</div>
+
+<div class="footer">
+  <p> psssttt...you have to catch the gull to go back home.</p>
+  <p>® Lauren Luchs Interactive Media </p>
+</div>
+
+</body>
+  </html> 
+
+
