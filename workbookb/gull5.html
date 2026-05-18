@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>HELGA </title> 
+    <style>
+
+            @font-face {
+  font-family: Tiny; 
+  src: url(otf/TINY5x3-140.otf); 
+}
+        body{          
+            cursor: url('images/hands.png'), auto;
+            font-family: Tiny;
+            color:coral;
+             background-color: paleturquoise;
+            text-align: center;
+            overflow-x:hidden;
+            overflow-y: scroll;
+              /* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp*/   
+        } 
+
+.flying-gull3 {
+    cursor: url('images/grab.png'), auto; 
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    animation: fly3 40s linear infinite; 
+}
+@keyframes fly3 {
+  0% { top: 20%; left: -10%; }
+  50% { top: 80%; left: 110%}
+  100% { top: 150%; left: -10%; }
+}
+h1{
+  font-size: 100px;
+}
+p{
+  font-size: 25px;
+}
+/* CSS */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2rem;
+  padding: 100px;
+  align-items: center;
+
+  overflow-x: hidden;
+
+}
+.gallery-item{
+max-width: fit-content;
+text-align: center;
+align-items: center;
+}
+.gallery > *:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  cursor: url('images/grab.png'), auto;;
+}
+#vid {
+  position: center;
+  max-width: 500px;
+  height: auto;
+  right: 0;
+  bottom: 0;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+</style>
+</head>
+    
+<body>
+
+  <!-- ... -->
+<h1> P5js Creative Coding.</h1>
+<h2> Week 4 - 6 trials and experiments with P5js. </h2>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <h1> Threshold</h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/threshold.mp4" type="video/mp4">
+</video>
+    </div>
+<br>
+<br>
+ <div class="gallery-item">
+     <h1> More Threshold </h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/threshold2.mp4" type="video/mp4">
+</video>
+    </div>
+<br>
+<br>
+<div class="gallery-item">
+     <h1> MOOOOOOOOOO</h1>
+     <video autoplay muted loop id="vid">
+  <source src="images/moo2.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+<br>
+<br>
+<div class="gallery-item">
+    <h1> Do I Know you?</h1>
+    <img src="images/doiknowyou.png" alt="P5JS wassup" width="600px">
+    <p> Do I know you?</p>
+  </div>
+<br>
+<br>
+<div class="gallery-item">
+     <h1> More Moooooooo</h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/mooo.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+<br>
+<div class="gallery-item">
+     <h1> Hello this is my face</h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/face2.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+<br>
+<div class="gallery-item">
+     <h1> Dilating webcam.</h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/dilate.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+<div class="gallery-item">
+     <h1> Dilating pt 2.</h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/dilateportrait.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+<div class="gallery-item">
+     <h1> Dilating webcam pt 3.</h1>
+     <video autoplay muted loop id="vid" width="600px">
+  <source src="images/dilatwebcam.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+
+<a href="Index.html"> <img src="images/gull5.png" alt="Flying gull3" class="flying-gull3"></a>
+
+<div class="footer">
+  <p> psssttt...you have to catch the gull to go back home.</p>
+  <p>® Lauren Luchs Interactive Media </p>
+</div>
+</body>
+  </html> 
